@@ -1,0 +1,845 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/piece3.png);
+  background-position: center center;
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Righteous', cursive;
+}
+
+.me {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #78cdd7;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: #0e1428;
+  color: #dffdff;
+  font-size: 25px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: expandPic;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  -webkit-animation-name: expandPic;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expandPic {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes expandPic {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*ORBIT*/
+.orbit {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -150px;
+  width: 300px;
+  height: 300px;
+  z-index: 999;
+  border-radius: 100%;
+  -webkit-animation: spin 20s linear infinite;
+  animation: spin 20s linear infinite;
+}
+
+.orbit-ball {
+  position: absolute;
+  top: -15px;
+  left: 125px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #78cdd7;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*THE 4 sections*/
+.frames {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  cursor: pointer;
+ 
+  background-image: url(images/piece3.png);
+  background-position: center center;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.framesHovered0 {
+  background-image: url(images/fairy-tale-full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.framesHovered1 {
+  background-image: url(images/aboutme_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.framesHovered2 {
+  background-image: url(images/cv_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.framesHovered3 {
+  background-image: url(images/contact_full2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Titles*/
+.framesText {
+  position: absolute;
+  font-size: 35px;
+  width: 200px;
+  color: #78cdd7;
+  text-align: center;
+  padding: 10px;
+  transition: all 1s;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.framesTextUpLeft {
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+}
+
+.framesTextUpRight {
+  right: 50%;
+  margin-right: -100px;
+  top: 50%;
+}
+
+.framesTextDownLeft {
+  left: 50%;
+  margin-left: -100px;
+  bottom: 50%;
+}
+
+.framesTextDownRight {
+  right: 50%;
+  margin-right: -100px;
+  bottom: 50%;
+}
+
+/*Titles move on click Left*/
+.framesText0Move {
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 1s;
+  animation-name: move;
+  animation-duration: 1s;
+}
+
+@keyframes move {
+  0% {
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+  }
+}
+
+/*Titles move on click Right*/
+.framesText1Move {
+  -webkit-animation-name: move1;
+  -webkit-animation-duration: 1s;
+  animation-name: move1;
+  animation-duration: 1s;
+}
+
+@keyframes move1 {
+  0% {
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+  }
+}
+
+@-webkit-keyframes move1 {
+  0% {
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    margin-left: 0px;
+  }
+}
+
+.framesClicked0 {
+  position: absolute;
+  -webkit-animation-name: expand0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: expand0;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  background: url(images/fairy-tale-full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: default;
+}
+
+@keyframes expand0 {
+  0% {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes expand0 {
+  0% {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.framesClicked0:hover {
+  border: none;
+}
+
+.framesClicked1 {
+  position: absolute;
+  -webkit-animation-name: expand1;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: expand1;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  background-image: url(images/aboutme_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: default;
+}
+
+@keyframes expand1 {
+  0% {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes expand1 {
+  0% {
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.framesClicked1:hover {
+  border: none;
+}
+
+.framesClicked2 {
+  position: absolute;
+  -webkit-animation-name: expand2;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: expand2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  background-image: url(images/cv_full.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: default;
+}
+
+@keyframes expand2 {
+  0% {
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes expand2 {
+  0% {
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.framesClicked2:hover {
+  border: none;
+}
+
+.framesClicked3 {
+  position: absolute;
+  -webkit-animation-name: expand3;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: expand3;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+  background-image: url(images/contact_full2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: default;
+}
+
+@keyframes expand3 {
+  0% {
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes expand3 {
+  0% {
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.framesClicked3:hover {
+  border: none;
+}
+
+.backBtn {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 10%;
+  z-index: 99;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+
+  cursor: pointer;
+  background-image: url(images/arrow2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  -webkit-animation-name: fix;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: fix;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fix {
+  100% {
+    position: fixed;
+  }
+}
+
+@-webkit-keyframes fix {
+  100% {
+    position: fixed;
+  }
+}
+
+.backBtn:hover {
+  transition: all 0.5s;
+  background-color: #78cdd7;
+}
+
+/*PROJECTS*/
+.projectsDiv {
+  margin: 50px auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects {
+  border-radius: 10%;
+  width: 20vw;
+  min-width: 270px;
+  max-width: 333px;
+  height: 18vw;
+  min-height: 250px;
+  max-height: 310px;
+  opacity: 0;
+  backface-visibility: hidden;
+  background-color: transparent;
+  margin: 10px;
+  perspective: 1000px;
+
+  -webkit-animation-name: expandP;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-name: expandP;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes expandP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes expandP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.flip-projects-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.projects:hover .flip-projects-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-projects-front,
+.flip-projects-back {
+  position: absolute;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 4px solid #78cdd7;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flip-projects-back {
+  background-color: #78cdd7;
+  color: #222;
+  transform: rotateX(180deg);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flipTitle {
+  padding: 5px;
+}
+
+.flipText {
+  padding: 5px;
+}
+
+.links {
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+  width: 40px;
+  display: inline-block;
+}
+
+.links > img {
+  width: 100%;
+}
+
+#project1 {
+  background-image: url(images/CaptureAngelskoSiyanie.png);
+}
+
+#project2 {
+  background-image: url(images/chameleon.png);
+}
+
+#project3 {
+  background-image: url(images/weather.png);
+}
+
+#project4 {
+  background-image: url(images/vodolaza.png);
+}
+
+#project5 {
+  background-image: url(images/Lotto.PNG);
+}
+
+#project6 {
+  background-image: url(images/Calculator.png);
+}
+
+#project7 {
+  background-image: url(images/TNW.png);
+}
+
+#project8 {
+  background-image: url(images/TicTacToe.png);
+}
+
+#project9 {
+  background-image: url(images/Library.png);
+}
+
+#project10 {
+  background-image: url(images/NyTimes.png);
+}
+
+#project11 {
+  background-image: url(images/Sketch.png);
+}
+
+#project12 {
+  background-image: url(images/ToDo.PNG);
+}
+
+#project13 {
+  background-image: url(images/Newsweek.png);
+}
+
+#project14 {
+  background-image: url(images/YouTube.png);
+}
+
+#project15 {
+  background-image: url(images/RockPaperScissors.png);
+}
+
+#project16 {
+  background-image: url(images/Pomodoro.PNG);
+}
+
+/*About me*/
+
+.aboutMeDiv {
+  width: 60%;
+  margin: 20% auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1428;
+  border-radius: 10px;
+  border: 2px solid #78cdd7;
+
+  opacity: 0;
+  -webkit-animation-name: expandP;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-name: expandP;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+#mePic {
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+  margin: 10px;
+  border: 2px solid #78cdd7;
+}
+
+.aboutMeText {
+  font-size: 22px;
+  color: #78cdd7;
+  text-align: left;
+  padding: 10px;
+}
+
+/*Skills*/
+.skillsDiv {
+  width: 90%;
+  margin: 20% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  margin: 10px;
+  opacity: 0;
+  -webkit-animation-name: expandP;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-name: expandP;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.skillText {
+  color: #78cdd7;
+  font-size: 25px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.skillIcon {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#skillIcon1 {
+  background-image: url(images/js.png);
+}
+
+#skillIcon2 {
+  background-image: url(images/html.png);
+}
+
+#skillIcon3 {
+  background-image: url(images/css.png);
+}
+
+#skillIcon4 {
+  background-image: url(images/react.png);
+}
+
+#skillIcon5 {
+  background-image: url(images/bootstrap.png);
+}
+#skillIcon6 {
+  background-image: url(images/sql.png);
+}
+
+#skillIcon7 {
+  background-image: url(images/git.png);
+}
+
+/*Contact*/
+a {
+  text-decoration: none;
+}
+
+.contactLink {
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#link1 {
+  background-image: url(images/mail.png);
+}
+
+#link2 {
+  background-image: url(images/linkedin.png);
+}
+
+#link3 {
+  background-image: url(images/githubBlue.png);
+}
+
+/*MEDIA*/
+
+@media screen and (max-width: 940px) {
+  .aboutMeDiv {
+    width: 90%;
+    margin: 20% auto;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .me {
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+  }
+
+  .orbit {
+    margin-left: -100px;
+    margin-top: -100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .orbit-ball {
+    top: -10px;
+    left: 100px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .framesText {
+    font-size: 28px;
+  }
+}
