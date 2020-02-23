@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "03e6fa430da1fb51f420f9d24e29da54",
+    "revision": "35a0005cadda5da2489ed0e1356da760",
     "url": "/index.html"
   },
   {
-    "revision": "f0079531cbc43b6c499d",
-    "url": "/static/css/main.2a093160.chunk.css"
+    "revision": "032d3ffd7a0301cccc16",
+    "url": "/static/css/main.079ab636.chunk.css"
   },
   {
     "revision": "9a8bf50f26743250104b",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.87a30b4e.chunk.js.LICENSE"
   },
   {
-    "revision": "f0079531cbc43b6c499d",
-    "url": "/static/js/main.8e9793f0.chunk.js"
+    "revision": "032d3ffd7a0301cccc16",
+    "url": "/static/js/main.b26c569e.chunk.js"
   },
   {
     "revision": "45415d874b5a14813c5b",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e79dc17448b471bb369375ffac4b857c",
     "url": "/static/media/CaptureAngelskoSiyanie.e79dc174.png"
+  },
+  {
+    "revision": "1fcb142e268e07be3559e2a490e04108",
+    "url": "/static/media/CaptureArrrays.1fcb142e.png"
   },
   {
     "revision": "0d80fd80878152fab4689af2c2169bfe",
@@ -102,10 +106,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9cbee2eb707c2f17cdd3d5e629bcbc5e",
     "url": "/static/media/mail.9cbee2eb.png"
-  },
-  {
-    "revision": "5ee70a8a64fd1e2d2fcfc3fc188b88ef",
-    "url": "/static/media/vodolaza.5ee70a8a.png"
   },
   {
     "revision": "4e7aff9694d39b16ce5a773959444fa2",
