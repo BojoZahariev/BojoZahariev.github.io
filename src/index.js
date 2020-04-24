@@ -7,9 +7,7 @@ const Me = () => {
     <div className='me'>
       <p className='meText'>
         Bojo Zahariev,
-        <br /> Front-end
         <br /> Web Developer
-       
       </p>
     </div>
   );
@@ -25,11 +23,11 @@ const Orbit = () => {
 };
 
 //Back Button
-const Back = props => {
+const Back = (props) => {
   return <div onClick={props.onClick} className='backBtn'></div>;
 };
 
-const Project = props => {
+const Project = (props) => {
   return (
     <div className='projects'>
       <div className='flip-projects-inner'>
@@ -39,10 +37,13 @@ const Project = props => {
           <div>
             <h1 className='flipTitle'>{props.title}</h1>
             <p className='flipText'>{props.text}</p>
-            <a href={props.live} target='blank' className='links'>
-              <img src='live.png' alt='live' />
-              Live
-            </a>
+
+            {props.live ? (
+              <a href={props.live} target='blank' className='links'>
+                <img src='live.png' alt='live' />
+                Live
+              </a>
+            ) : null}
             <a href={props.git} target='blank' className='links'>
               <img src='github.png' alt='github' />
               Github
@@ -54,7 +55,7 @@ const Project = props => {
   );
 };
 
-const Skill = props => {
+const Skill = (props) => {
   return (
     <div className='skill'>
       <p className='skillText'>{props.text}</p>
@@ -63,7 +64,7 @@ const Skill = props => {
   );
 };
 
-const Frame0 = props => {
+const Frame0 = (props) => {
   if (props.frameStatus) {
     return (
       <div className={`frames ${props.frameStatus}`}>
@@ -86,6 +87,13 @@ const Frame0 = props => {
           />
 
           <Project
+            id={'project4'}
+            title={'BH Reception App'}
+            text={'Reception App for signing in visitors and colleagues.'}
+            git={'https://github.com/BojoZahariev/BH_reception'}
+          />
+
+          <Project
             id={'project3'}
             title={'Weather App'}
             text={'Local weather App, made using the Openweathermap API.'}
@@ -94,11 +102,11 @@ const Frame0 = props => {
           />
 
           <Project
-            id={'project4'}
-            title={'Vodolaza'}
-            text={'REACT small restaurant page, made for fun. Real place though, one of my favorite.'}
-            live={'https://bojozahariev.github.io/Restaurant_react/'}
-            git={'https://github.com/BojoZahariev/Restaurant_react'}
+            id={'project17'}
+            title={'Arrrays'}
+            text={'Array methods done the Pirate way. REACT educational project for JS array methods.'}
+            live={'https://bojozahariev.github.io/Arrrays/'}
+            git={'https://github.com/BojoZahariev/Arrrays'}
           />
 
           <Project
@@ -125,7 +133,13 @@ const Frame0 = props => {
             git={'https://github.com/BojoZahariev/TheNextWeb-homepage'}
           />
 
-          <Project id={'project8'} title={'Tic Tac Toe'} text={'JavaScript Tic Tac Toe game.'} live={'https://bojozahariev.github.io/TicTacToe/'} git={'https://github.com/BojoZahariev/TicTacToe'} />
+          <Project
+            id={'project8'}
+            title={'Tic Tac Toe'}
+            text={'JavaScript Tic Tac Toe game.'}
+            live={'https://bojozahariev.github.io/TicTacToe/'}
+            git={'https://github.com/BojoZahariev/TicTacToe'}
+          />
 
           <Project
             id={'project9'}
@@ -143,9 +157,21 @@ const Frame0 = props => {
             git={'https://github.com/BojoZahariev/NY_Times_article'}
           />
 
-          <Project id={'project11'} title={'Sketch'} text={'Drawing App with DOM manipulation.'} live={'https://bojozahariev.github.io/Sketch/'} git={'https://github.com/BojoZahariev/Sketch'} />
+          <Project
+            id={'project11'}
+            title={'Sketch'}
+            text={'Drawing App with DOM manipulation.'}
+            live={'https://bojozahariev.github.io/Sketch/'}
+            git={'https://github.com/BojoZahariev/Sketch'}
+          />
 
-          <Project id={'project12'} title={'To Do List'} text={'To Do list using Internal Storage.'} live={'https://bojozahariev.github.io/ToDo/'} git={'https://github.com/BojoZahariev/ToDo'} />
+          <Project
+            id={'project12'}
+            title={'To Do List'}
+            text={'To Do list using Internal Storage.'}
+            live={'https://bojozahariev.github.io/ToDo/'}
+            git={'https://github.com/BojoZahariev/ToDo'}
+          />
 
           <Project
             id={'project13'}
@@ -185,14 +211,19 @@ const Frame0 = props => {
     );
   } else {
     return (
-      <div className={`frames ${props.isHovered === 0 ? 'framesHovered0' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
+      <div
+        className={`frames ${props.isHovered === 0 ? 'framesHovered0' : false}`}
+        onMouseEnter={props.onMouseEnter}
+        onMouseLeave={props.onMouseLeave}
+        onClick={props.onClick}
+      >
         <p className={`framesText ${props.textStatus}`}>Projects</p>
       </div>
     );
   }
 };
 
-const Frame1 = props => {
+const Frame1 = (props) => {
   if (props.frameStatus) {
     return (
       <div className={`frames ${props.frameStatus}`}>
@@ -201,7 +232,8 @@ const Frame1 = props => {
         <div className='aboutMeDiv'>
           <img id='mePic' src='me.jpg' alt='me'></img>
           <p className='aboutMeText'>
-            Hi, I'm Bojo, <br />A Web Developer who likes to push the boundaries and loves to think of new ways to create outstanding experiences and amazing digital content across all devices.
+            Hi, I'm Bojo, <br />A Web Developer who likes to push the boundaries and loves to think of new ways to
+            create outstanding experiences and amazing digital content across all devices.
           </p>
         </div>
 
@@ -210,14 +242,19 @@ const Frame1 = props => {
     );
   } else {
     return (
-      <div className={`frames ${props.isHovered === 1 ? 'framesHovered1' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
+      <div
+        className={`frames ${props.isHovered === 1 ? 'framesHovered1' : false}`}
+        onMouseEnter={props.onMouseEnter}
+        onMouseLeave={props.onMouseLeave}
+        onClick={props.onClick}
+      >
         <p className={`framesText ${props.textStatus}`}>About me</p>
       </div>
     );
   }
 };
 
-const Frame2 = props => {
+const Frame2 = (props) => {
   if (props.frameStatus) {
     return (
       <div className={`frames ${props.frameStatus}`}>
@@ -242,14 +279,19 @@ const Frame2 = props => {
     );
   } else {
     return (
-      <div className={`frames ${props.isHovered === 2 ? 'framesHovered2' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
+      <div
+        className={`frames ${props.isHovered === 2 ? 'framesHovered2' : false}`}
+        onMouseEnter={props.onMouseEnter}
+        onMouseLeave={props.onMouseLeave}
+        onClick={props.onClick}
+      >
         <p className={`framesText ${props.textStatus}`}>Skills</p>
       </div>
     );
   }
 };
 
-const Frame3 = props => {
+const Frame3 = (props) => {
   if (props.frameStatus) {
     return (
       <div className={`frames ${props.frameStatus}`}>
@@ -274,7 +316,12 @@ const Frame3 = props => {
     );
   } else {
     return (
-      <div className={`frames ${props.isHovered === 3 ? 'framesHovered3' : false}`} onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave} onClick={props.onClick}>
+      <div
+        className={`frames ${props.isHovered === 3 ? 'framesHovered3' : false}`}
+        onMouseEnter={props.onMouseEnter}
+        onMouseLeave={props.onMouseLeave}
+        onClick={props.onClick}
+      >
         <p className={`framesText ${props.textStatus}`}>Contact</p>
       </div>
     );
@@ -286,7 +333,7 @@ class Container extends React.Component {
     super(props);
     this.state = {
       clicked: false,
-      isHovered: false
+      isHovered: false,
     };
 
     this.clickControl = this.clickControl.bind(this);
@@ -297,19 +344,19 @@ class Container extends React.Component {
   clickControl(fr) {
     this.setState({
       clicked: fr,
-      isHovered: false
+      isHovered: false,
     });
   }
 
   handleFramesHover(fr) {
     this.setState({
-      isHovered: fr
+      isHovered: fr,
     });
   }
 
   handleFramesHoverLeave() {
     this.setState({
-      isHovered: false
+      isHovered: false,
     });
   }
 
@@ -355,7 +402,11 @@ class Container extends React.Component {
     if (this.state.clicked === 'framesClicked0') {
       return (
         <div className='main'>
-          <Frame0 frameStatus={this.state.clicked} textStatus={'framesText0Move'} onClick={() => this.clickControl(false)} />
+          <Frame0
+            frameStatus={this.state.clicked}
+            textStatus={'framesText0Move'}
+            onClick={() => this.clickControl(false)}
+          />
         </div>
       );
     }
@@ -363,7 +414,11 @@ class Container extends React.Component {
     if (this.state.clicked === 'framesClicked1') {
       return (
         <div className='main'>
-          <Frame1 frameStatus={this.state.clicked} textStatus={'framesText0Move'} onClick={() => this.clickControl(false)} />
+          <Frame1
+            frameStatus={this.state.clicked}
+            textStatus={'framesText0Move'}
+            onClick={() => this.clickControl(false)}
+          />
         </div>
       );
     }
@@ -371,7 +426,11 @@ class Container extends React.Component {
     if (this.state.clicked === 'framesClicked2') {
       return (
         <div className='main'>
-          <Frame2 frameStatus={this.state.clicked} textStatus={'framesText1Move'} onClick={() => this.clickControl(false)} />
+          <Frame2
+            frameStatus={this.state.clicked}
+            textStatus={'framesText1Move'}
+            onClick={() => this.clickControl(false)}
+          />
         </div>
       );
     }
@@ -379,7 +438,11 @@ class Container extends React.Component {
     if (this.state.clicked === 'framesClicked3') {
       return (
         <div className='main'>
-          <Frame3 frameStatus={this.state.clicked} textStatus={'framesText1Move'} onClick={() => this.clickControl(false)} />
+          <Frame3
+            frameStatus={this.state.clicked}
+            textStatus={'framesText1Move'}
+            onClick={() => this.clickControl(false)}
+          />
         </div>
       );
     }
