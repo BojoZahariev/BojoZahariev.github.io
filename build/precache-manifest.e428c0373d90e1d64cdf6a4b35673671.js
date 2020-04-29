@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "03e6fa430da1fb51f420f9d24e29da54",
+    "revision": "f4721d1fd1773b0f19e855e013ce7458",
     "url": "/index.html"
   },
   {
-    "revision": "f0079531cbc43b6c499d",
-    "url": "/static/css/main.2a093160.chunk.css"
+    "revision": "c71199b3165cf972a197",
+    "url": "/static/css/main.fcfc0625.chunk.css"
   },
   {
-    "revision": "9a8bf50f26743250104b",
-    "url": "/static/js/2.87a30b4e.chunk.js"
+    "revision": "60a324cbe20720b85129",
+    "url": "/static/js/2.9c09f7ce.chunk.js"
   },
   {
-    "revision": "d705cb622423d72c5defbf368ca70dcc",
-    "url": "/static/js/2.87a30b4e.chunk.js.LICENSE"
+    "revision": "99bd0487192ec9e7d9ee8fbbd91ee444",
+    "url": "/static/js/2.9c09f7ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f0079531cbc43b6c499d",
-    "url": "/static/js/main.8e9793f0.chunk.js"
+    "revision": "c71199b3165cf972a197",
+    "url": "/static/js/main.617fcc07.chunk.js"
   },
   {
-    "revision": "45415d874b5a14813c5b",
-    "url": "/static/js/runtime-main.09cab13d.js"
+    "revision": "30ef98ccc078dcdc8699",
+    "url": "/static/js/runtime-main.13135219.js"
   },
   {
     "revision": "c193941c9e342664fb9b165fafb20f97",
@@ -30,6 +30,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e79dc17448b471bb369375ffac4b857c",
     "url": "/static/media/CaptureAngelskoSiyanie.e79dc174.png"
+  },
+  {
+    "revision": "1fcb142e268e07be3559e2a490e04108",
+    "url": "/static/media/CaptureArrrays.1fcb142e.png"
+  },
+  {
+    "revision": "e7c3691d6f3da1eba17e1ec585178dfc",
+    "url": "/static/media/CaptureBH.e7c3691d.png"
+  },
+  {
+    "revision": "58ed28c2d918df2f2c4dfc630f9fa176",
+    "url": "/static/media/CapturePortal.58ed28c2.png"
   },
   {
     "revision": "0d80fd80878152fab4689af2c2169bfe",
@@ -102,10 +114,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9cbee2eb707c2f17cdd3d5e629bcbc5e",
     "url": "/static/media/mail.9cbee2eb.png"
-  },
-  {
-    "revision": "5ee70a8a64fd1e2d2fcfc3fc188b88ef",
-    "url": "/static/media/vodolaza.5ee70a8a.png"
   },
   {
     "revision": "4e7aff9694d39b16ce5a773959444fa2",
