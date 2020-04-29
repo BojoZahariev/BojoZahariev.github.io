@@ -72,10 +72,17 @@ const Frame0 = (props) => {
         <div className='projectsDiv'>
           <Project
             id={'project1'}
-            title={'Angel shining'}
-            text={'Static website made for a small autocosmetics garage in Bulgaria, hence the strange language.'}
+            title={'Angelskosiyanie.com'}
+            text={'Static website made for an autocosmetics garage in Bulgaria. Hosted on Netlify'}
             live={'https://angelskosiyanie.com'}
             git={'https://github.com/BojoZahariev/AngelskoSiyanie'}
+          />
+
+          <Project
+            id={'project18'}
+            title={'Security Portal'}
+            text={'Britannia House Security desk app replacing all the paperwork.'}
+            git={'https://github.com/BojoZahariev/security_portal'}
           />
 
           <Project
@@ -88,8 +95,8 @@ const Frame0 = (props) => {
 
           <Project
             id={'project4'}
-            title={'BH Reception App'}
-            text={'Reception App for signing in visitors and colleagues.'}
+            title={'Reception App'}
+            text={'Britannia House Reception App for signing in visitors and colleagues.'}
             git={'https://github.com/BojoZahariev/BH_reception'}
           />
 
