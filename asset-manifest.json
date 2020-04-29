@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f770f758.chunk.css",
-    "main.js": "/static/js/main.67c3f6de.chunk.js",
-    "main.js.map": "/static/js/main.67c3f6de.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.09cab13d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.09cab13d.js.map",
-    "static/js/2.87a30b4e.chunk.js": "/static/js/2.87a30b4e.chunk.js",
-    "static/js/2.87a30b4e.chunk.js.map": "/static/js/2.87a30b4e.chunk.js.map",
+    "main.css": "/static/css/main.fcfc0625.chunk.css",
+    "main.js": "/static/js/main.617fcc07.chunk.js",
+    "main.js.map": "/static/js/main.617fcc07.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.13135219.js",
+    "runtime-main.js.map": "/static/js/runtime-main.13135219.js.map",
+    "static/js/2.9c09f7ce.chunk.js": "/static/js/2.9c09f7ce.chunk.js",
+    "static/js/2.9c09f7ce.chunk.js.map": "/static/js/2.9c09f7ce.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.813363df691b08c3b7d67250c36b4663.js": "/precache-manifest.813363df691b08c3b7d67250c36b4663.js",
+    "precache-manifest.e428c0373d90e1d64cdf6a4b35673671.js": "/precache-manifest.e428c0373d90e1d64cdf6a4b35673671.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.f770f758.chunk.css.map": "/static/css/main.f770f758.chunk.css.map",
-    "static/js/2.87a30b4e.chunk.js.LICENSE": "/static/js/2.87a30b4e.chunk.js.LICENSE",
+    "static/css/main.fcfc0625.chunk.css.map": "/static/css/main.fcfc0625.chunk.css.map",
+    "static/js/2.9c09f7ce.chunk.js.LICENSE.txt": "/static/js/2.9c09f7ce.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/weather.4e7aff96.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.09cab13d.js",
-    "static/js/2.87a30b4e.chunk.js",
-    "static/css/main.f770f758.chunk.css",
-    "static/js/main.67c3f6de.chunk.js"
+    "static/js/runtime-main.13135219.js",
+    "static/js/2.9c09f7ce.chunk.js",
+    "static/css/main.fcfc0625.chunk.css",
+    "static/js/main.617fcc07.chunk.js"
   ]
 }
