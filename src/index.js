@@ -117,6 +117,14 @@ const Frame0 = (props) => {
           />
 
           <Project
+            id={'project19'}
+            title={'Ruin My Lunch'}
+            text={'Nutrition and exercise app designed to ruin your lunch.'}
+            live={'https://bojozahariev.github.io/Ruin_My_Lunch/'}
+            git={'https://github.com/BojoZahariev/Ruin_My_Lunch'}
+          />
+
+          <Project
             id={'project5'}
             title={'My Lotto Numbers'}
             text={'Lucky Lotto Numbers generator using name and DOB as seed.'}
@@ -275,6 +283,8 @@ const Frame2 = (props) => {
           <Skill text={'CSS'} id={'skillIcon3'} />
 
           <Skill text={'REACT'} id={'skillIcon4'} />
+
+          <Skill text={'Electron'} id={'skillIcon6'} />
 
           <Skill text={'Bootstrap'} id={'skillIcon5'} />
 
