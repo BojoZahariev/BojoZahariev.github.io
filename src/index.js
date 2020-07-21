@@ -125,6 +125,14 @@ const Frame0 = (props) => {
           />
 
           <Project
+            id={'project20'}
+            title={'Bulls and Cows'}
+            text={'Code-breaking game with numbers.'}
+            live={'https://bojozahariev.github.io/BullsAndCows/.'}
+            git={'https://github.com/BojoZahariev/BullsAndCows'}
+          />
+
+          <Project
             id={'project5'}
             title={'My Lotto Numbers'}
             text={'Lucky Lotto Numbers generator using name and DOB as seed.'}
