@@ -101,6 +101,14 @@ const Frame0 = (props) => {
           />
 
           <Project
+            id={'project21'}
+            title={'The Lockdown game'}
+            text={'Snakes and ladders type of game with dice.'}
+            live={'https://bojozahariev.github.io/TheLockdownGame/'}
+            git={'https://github.com/BojoZahariev/TheLockdownGame'}
+          />
+
+          <Project
             id={'project3'}
             title={'Weather App'}
             text={'Local weather App, made using the Openweathermap API.'}
