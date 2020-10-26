@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c7e2904add5b9193315437a6e394856",
+    "revision": "ae03efcf82752b0e7aac65dcd697b75c",
     "url": "/index.html"
   },
   {
-    "revision": "2b62a58ad373fe1753ec",
-    "url": "/static/css/main.a1a4af9a.chunk.css"
+    "revision": "8891f865098dca7a10de",
+    "url": "/static/css/main.6aacaa7a.chunk.css"
   },
   {
     "revision": "60a324cbe20720b85129",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.9c09f7ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b62a58ad373fe1753ec",
-    "url": "/static/js/main.db979d4f.chunk.js"
+    "revision": "8891f865098dca7a10de",
+    "url": "/static/js/main.8722ac08.chunk.js"
   },
   {
     "revision": "30ef98ccc078dcdc8699",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d858bad35c2dfb14b3e3dd7b2b677f5c",
     "url": "/static/media/CaptureBullsAndCows.d858bad3.png"
+  },
+  {
+    "revision": "f871ad53b1e87ac47fad05a7339cf44b",
+    "url": "/static/media/CaptureLove.f871ad53.png"
   },
   {
     "revision": "58ed28c2d918df2f2c4dfc630f9fa176",
