@@ -109,6 +109,14 @@ const Frame0 = (props) => {
           />
 
           <Project
+            id={'project22'}
+            title={'The Love Meter'}
+            text={'Love stats App using RNG with seed.'}
+            live={'https://bojozahariev.github.io/TheLoveMeter/'}
+            git={'https://github.com/BojoZahariev/TheLoveMeter'}
+          />
+
+          <Project
             id={'project3'}
             title={'Weather App'}
             text={'Local weather App, made using the Openweathermap API.'}
@@ -151,7 +159,7 @@ const Frame0 = (props) => {
           <Project
             id={'project6'}
             title={'Calculator'}
-            text={'JavaScript Steampunk calculator, one of my early projects.'}
+            text={'JavaScript Steampunk calculator.'}
             live={'https://bojozahariev.github.io/Calculator/'}
             git={'https://github.com/BojoZahariev/Calculator'}
           />
